@@ -1,0 +1,29 @@
+[appliedStereotypes~=PositiveAuthorization],
+[appliedStereotypes~=PositiveObligation],
+[appliedStereotypes~=NegativeAuthorization],
+[appliedStereotypes~=NegativeObligation],
+[appliedStereotypes~=Who],
+[appliedStereotypes~=What],
+[appliedStereotypes~=Where],
+[appliedStereotypes~=When],
+[appliedStereotypes~=How],
+[appliedStereotypes~=Why],
+[appliedStereotypes~=Action]
+ { 
+	displayName:true;
+	displayIcon:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+}
+
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
