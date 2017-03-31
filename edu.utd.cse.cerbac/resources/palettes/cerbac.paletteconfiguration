@@ -3,6 +3,15 @@
 
 	
 	<drawerConfigurations id="edu.utd.cse.cerbac.node.CerbacPolicyNodes" label="Cerbac Nodes" description="Cerbac Nodes">	
+		
+		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.node.cerbac.positiveauthorization" label="PositiveAuthorization" description="Create a Positive Authorization">
+			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/PositiveAuthorization.png"/>
+			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.PositiveAuthorization_Shape"/>
+		</ownedConfigurations>
+		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.negativeauthorization" label="NegativeAuthorization" description="Create a Negative Authorization">
+			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/NegativeAuthorization.png"/>
+			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.NegativeAuthorization_Shape"/>
+		</ownedConfigurations>
 		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.positiveobligation" label="PositiveObligation" description="Create a Positive Obligation">
 			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/PositiveObligation.png"/>
 			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.PositiveObligation_Shape"/>
@@ -13,14 +22,7 @@
 			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.NegativeObligation_Shape"/>
 		</ownedConfigurations>
 		
-		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.node.cerbac.positiveauthorization" label="PositiveAuthorization" description="Create a Positive Authorization">
-			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/PositiveAuth.png"/>
-			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.PositiveAuthorization_Shape"/>
-		</ownedConfigurations>
-		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.negativeauthorization" label="NegativeAuthorization" description="Create a Negative Authorization">
-			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/NegativeAuth.png"/>
-			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.NegativeAuthorization_Shape"/>
-		</ownedConfigurations>
+		
 		
 		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.action" label="Action" description="Create a Policy Action">
 			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/Action.png"/>

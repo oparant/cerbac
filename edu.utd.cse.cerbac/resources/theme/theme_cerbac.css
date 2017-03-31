@@ -12,18 +12,80 @@
  { 
 	displayName:true;
 	displayIcon:true;
-	elementIcon:false;
+	elementIcon:true;
 	isNameWrap: true;
 	bold:true;
 }
 
+/* Make rounded corners for all connectors. */
+[appliedStereotypes~=Association],
+[appliedStereotypes~=ActionLink],
+[appliedStereotypes~=WhoLink],
+[appliedStereotypes~=WhatLink],
+[appliedStereotypes~=WhereLink],
+[appliedStereotypes~=HowLink],
+[appliedStereotypes~=WhyLink],
+[appliedStereotypes~=WhenLink]
+ {
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	/* closestDistance:true; */
+	/* smoothness:More; */
+}
+
+
+/* Hide stereotype label for all elements.
+* > Label[type=StereotypeLabel]{
+    visible: false;
+}
+* 
+*/
 
 /* Hide compartment for all elements - just show the name and related icon. */
 Compartment {
     visible:false;
+    showTitle: false;
 }
 
 /* Show symbol compartment so that text is "pushed" to upper boundary of element. */
 Compartment[kind="symbol"]  {
     visible:true;
+}
+
+/* Apply background color for policy type elements. */
+[appliedStereotypes~=PositiveAuthorization],
+[appliedStereotypes~=PositiveObligation],
+[appliedStereotypes~=NegativeObligation],
+[appliedStereotypes~=NegativeAuthorization] {
+	fillColor:#C390D4;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Show SVG compartment for "Symbol" shapes. */
+/* *.Symbol > Compartment[kind="symbol"]  {
+    visible:true;
+}*/
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+
+[appliedStereotypes~=PositiveAuthorization].Symbol {
+    svgFile: 'platform:/plugin/edu.utd.cse.cerbac/resources/icons/svg/PositiveAuth.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+90;
+	displayName:false;
 }
