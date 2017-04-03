@@ -128,9 +128,23 @@
   </elementTypeConfigurations>
   <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_EPgw8BSwEeewf678yanStA" identifier="edu.utd.cse.cerbac.WhoLink" name="WhoLink" hint="UML::Association">
     <iconEntry xmi:id="_cDwCMBSwEeewf678yanStA" iconPath="/icons/full/obj16/Association.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-     <specializedTypesID>org.eclipse.papyrus.uml.Association</specializedTypesID>
+    <specializedTypesID>org.eclipse.papyrus.uml.Association</specializedTypesID>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_kQR-wBSwEeewf678yanStA">
       <stereotypesQualifiedNames>Cerbac::WhoLink</stereotypesQualifiedNames>
+    </matcherConfiguration>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_A7xIYBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.PolicyAttributeLink_UML::Association" name="PolicyAttributeLink" hint="UML::Association">
+    <iconEntry xmi:id="_oFpG4BgKEeelXajHeFP_UQ" iconPath="/icons/full/obj16/Association.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypesID>org.eclipse.papyrus.uml.Association</specializedTypesID>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_o0w2sBgKEeelXajHeFP_UQ">
+      <stereotypesQualifiedNames>Cerbac::PolicyAttributeLink</stereotypesQualifiedNames>
+    </matcherConfiguration>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_CD1jsBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.PolicyAttributeExtend_UML::Specialization" name="PolicyAttributeExtend" hint="UML::Specialization">
+    <iconEntry xmi:id="_pa8F4BgKEeelXajHeFP_UQ" iconPath="/icons/full/obj16/Specialization.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypesID>org.eclipse.papyrus.uml.Specialization</specializedTypesID>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_qLdj4BgKEeelXajHeFP_UQ">
+      <stereotypesQualifiedNames>Cerbac::PolicyAttributeExtend</stereotypesQualifiedNames>
     </matcherConfiguration>
   </elementTypeConfigurations>
   <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_T4_iHRSdEeewf678yanStA" identifier="edu.utd.cse.cerbac.action" target="_T4-60RSdEeewf678yanStA">
@@ -225,6 +239,16 @@
   </adviceBindingsConfigurations>
   <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_UE56sxUQEee6jowUEbx-6w" identifier="edu.utd.cse.cerbac.actionLink_UML::Association" target="_UE56sBUQEee6jowUEbx-6w">
     <stereotypesToApply xmi:id="_UE56tBUQEee6jowUEbx-6w" stereotypeQualifiedName="Cerbac::ActionLink" updateName="true">
+      <requiredProfiles>Cerbac</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Dw-a8BgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.policyAttributeLink_UML::Association" target="_A7xIYBgKEeelXajHeFP_UQ">
+    <stereotypesToApply xmi:id="_rpQXkBgKEeelXajHeFP_UQ" stereotypeQualifiedName="Cerbac::PolicyAttributeLink" updateName="true">
+      <requiredProfiles>Cerbac</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_EVp1UBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.policyAttributeExtend_UML::Specialization" target="_CD1jsBgKEeelXajHeFP_UQ">
+    <stereotypesToApply xmi:id="_sc73QBgKEeelXajHeFP_UQ" stereotypeQualifiedName="Cerbac::PolicyAttributeExtend" updateName="true">
       <requiredProfiles>Cerbac</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>

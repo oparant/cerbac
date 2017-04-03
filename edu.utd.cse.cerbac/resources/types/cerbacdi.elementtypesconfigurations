@@ -78,6 +78,16 @@
     <specializedTypesID>org.eclipse.papyrus.umldi.Association_Edge</specializedTypesID>
   </elementTypeConfigurations>
   
+   <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" identifier="edu.utd.cse.cerbac.profile.PolicyAttributeLink_Association_Edge" name="PolicyAttributeLink (Association_Edge)" hint="Association_Edge">
+   <specializedTypesID>edu.utd.cse.cerbac.PolicyAttributeLink_UML::Association</specializedTypesID>
+    <specializedTypesID>org.eclipse.papyrus.umldi.Association_Edge</specializedTypesID>
+  </elementTypeConfigurations>
+  
+   <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" identifier="edu.utd.cse.cerbac.profile.PolicyAttributeExtend_Specialization_Edge" name="PolicyAttributeExtend (Specialization_Edge)" hint="Specialization_Edge">
+   <specializedTypesID>edu.utd.cse.cerbac.PolicyAttributeExtend_UML::Specialization</specializedTypesID>
+    <specializedTypesID>org.eclipse.papyrus.umldi.Specialization_Edge</specializedTypesID>
+  </elementTypeConfigurations>
+  
  
   
 </elementtypesconfigurations:ElementTypeSetConfiguration>

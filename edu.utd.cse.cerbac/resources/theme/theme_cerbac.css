@@ -1,3 +1,8 @@
+* {
+	svgCssFile: 'platform:/plugin/edu.utd.cse.cerbac/theme/theme_svg.css'; /* The stylesheet to apply to all SVG Images */
+}
+
+
 [appliedStereotypes~=PositiveAuthorization],
 [appliedStereotypes~=PositiveObligation],
 [appliedStereotypes~=NegativeAuthorization],
@@ -12,12 +17,12 @@
  { 
 	displayName:true;
 	displayIcon:true;
-	elementIcon:true;
+	elementIcon:false;
 	isNameWrap: true;
 	bold:true;
 }
 
-/* Make rounded corners for all connectors. */
+/* Make rounded corners for all connectors.
 [appliedStereotypes~=Association],
 [appliedStereotypes~=ActionLink],
 [appliedStereotypes~=WhoLink],
@@ -29,17 +34,11 @@
  {
 	routing:Rectilinear;
 	roundedBendpointsRadius:10;
-	/* closestDistance:true; */
-	/* smoothness:More; */
+	
 }
+ */
 
 
-/* Hide stereotype label for all elements.
-* > Label[type=StereotypeLabel]{
-    visible: false;
-}
-* 
-*/
 
 /* Hide compartment for all elements - just show the name and related icon. */
 Compartment {
@@ -52,12 +51,23 @@ Compartment[kind="symbol"]  {
     visible:true;
 }
 
+
 /* Apply background color for policy type elements. */
 [appliedStereotypes~=PositiveAuthorization],
 [appliedStereotypes~=PositiveObligation],
 [appliedStereotypes~=NegativeObligation],
 [appliedStereotypes~=NegativeAuthorization] {
 	fillColor:#C390D4;
+}
+
+/* Apply background color for policy attributes elements. */
+[appliedStereotypes~=Who],
+[appliedStereotypes~=What],
+[appliedStereotypes~=Where],
+[appliedStereotypes~=When],
+[appliedStereotypes~=Where],
+[appliedStereotypes~=Why] {
+	fillColor:#FCA7AD;
 }
 
 /* Default settings for "Symbol" shapes. */
@@ -67,10 +77,6 @@ Compartment[kind="symbol"]  {
 	displayIcon:false;
 }
 
-/* Show SVG compartment for "Symbol" shapes. */
-/* *.Symbol > Compartment[kind="symbol"]  {
-    visible:true;
-}*/
 
 /* Turn on "floating label" for "Symbol" shapes. */
 *.Symbol > Label {
@@ -82,10 +88,41 @@ Compartment[kind="symbol"]  {
 	visible:false;
 }
 
+[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=constraints],
+[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=property],
+[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=operations] {
+	visible:false;
+}
 
 [appliedStereotypes~=PositiveAuthorization].Symbol {
-    svgFile: 'platform:/plugin/edu.utd.cse.cerbac/resources/icons/svg/PositiveAuth.svg';
-	floatingLabelOffsetWidth:+23;
-    floatingLabelOffsetHeight:+90;
+	svgFile: 'platform:/plugin/edu.utd.cse.cerbac/resources/shapes/PositiveAuthorization.svg';
+	floatingLabelOffsetWidth:10;
+    floatingLabelOffsetHeight:55;
 	displayName:false;
+	
+}
+
+Association > Label:sourceRole {
+	visible:false;
+}
+
+Association > Label:targetRole {
+	visible:false;
+}
+
+
+Association > Label:sourceMultiplicity {
+	visible:false;
+}
+
+Association > Label:targetMultiplicity {
+	visible:false;
+}
+
+Association > Label:name {
+	visible:false;
+}
+
+Association > Label:stereotype {
+	visible:false;
 }
