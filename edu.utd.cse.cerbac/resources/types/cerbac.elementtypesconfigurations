@@ -140,9 +140,9 @@
       <stereotypesQualifiedNames>Cerbac::PolicyAttributeLink</stereotypesQualifiedNames>
     </matcherConfiguration>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_CD1jsBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.PolicyAttributeExtend_UML::Specialization" name="PolicyAttributeExtend" hint="UML::Specialization">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_CD1jsBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.PolicyAttributeExtend_UML::Generalization" name="PolicyAttributeExtend" hint="UML::Generalization">
     <iconEntry xmi:id="_pa8F4BgKEeelXajHeFP_UQ" iconPath="/icons/full/obj16/Specialization.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <specializedTypesID>org.eclipse.papyrus.uml.Specialization</specializedTypesID>
+    <specializedTypesID>org.eclipse.papyrus.uml.Generalization</specializedTypesID>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_qLdj4BgKEeelXajHeFP_UQ">
       <stereotypesQualifiedNames>Cerbac::PolicyAttributeExtend</stereotypesQualifiedNames>
     </matcherConfiguration>
@@ -247,7 +247,7 @@
       <requiredProfiles>Cerbac</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_EVp1UBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.policyAttributeExtend_UML::Specialization" target="_CD1jsBgKEeelXajHeFP_UQ">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_EVp1UBgKEeelXajHeFP_UQ" identifier="edu.utd.cse.cerbac.policyAttributeExtend_UML::Generalization" target="_CD1jsBgKEeelXajHeFP_UQ">
     <stereotypesToApply xmi:id="_sc73QBgKEeelXajHeFP_UQ" stereotypeQualifiedName="Cerbac::PolicyAttributeExtend" updateName="true">
       <requiredProfiles>Cerbac</requiredProfiles>
     </stereotypesToApply>

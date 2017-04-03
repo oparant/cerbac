@@ -68,7 +68,7 @@
 		
 		<ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="edu.utd.cse.cerbac.policyattributeextend" 	label="PolicyAttributeExtend" description="Create a Policy Attribute Extension" kind="ConnectionTool">
 			<icon pluginID="edu.utd.cse.cerbac" iconPath="resources/icons/obj16/specialization.png"/>
-			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.PolicyAttributeExtend_Specialization_Edge"/>			
+			<elementDescriptors elementTypeId="edu.utd.cse.cerbac.profile.PolicyAttributeExtend_Generalization_Edge"/>			
 		</ownedConfigurations>
 	
 		

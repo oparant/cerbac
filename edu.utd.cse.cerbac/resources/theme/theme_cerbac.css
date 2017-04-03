@@ -3,6 +3,19 @@
 }
 
 
+
+[appliedStereotypes~=Who],
+[appliedStereotypes~=What],
+[appliedStereotypes~=Where],
+[appliedStereotypes~=When],
+[appliedStereotypes~=How],
+[appliedStereotypes~=Why],
+[appliedStereotypes~=Action] {
+	radiusWidth:150;
+	radiusHeight:50;
+	borderStyle:dash;
+}
+
 [appliedStereotypes~=PositiveAuthorization],
 [appliedStereotypes~=PositiveObligation],
 [appliedStereotypes~=NegativeAuthorization],
@@ -51,6 +64,9 @@ Compartment[kind="symbol"]  {
     visible:true;
 }
 
+Compartment[kind="internalstructure"]{
+    collapsed:true;
+}
 
 /* Apply background color for policy type elements. */
 [appliedStereotypes~=PositiveAuthorization],
@@ -66,6 +82,7 @@ Compartment[kind="symbol"]  {
 [appliedStereotypes~=Where],
 [appliedStereotypes~=When],
 [appliedStereotypes~=Where],
+[appliedStereotypes~=How],
 [appliedStereotypes~=Why] {
 	fillColor:#FCA7AD;
 }
@@ -88,8 +105,55 @@ Compartment[kind="symbol"]  {
 	visible:false;
 }
 
-[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=constraints],
-[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=property],
+[appliedStereotypes~=Who]> Compartment[kind=constraints],
+[appliedStereotypes~=Who]> Compartment[kind=operations],
+[appliedStereotypes~=Who]> Compartment[kind=attributes],
+[appliedStereotypes~=Who]> Compartment[kind=symbol],
+
+[appliedStereotypes~=What]> Compartment[kind=constraints],
+[appliedStereotypes~=What]> Compartment[kind=operations],
+[appliedStereotypes~=What]> Compartment[kind=attributes],
+[appliedStereotypes~=What]> Compartment[kind=symbol],
+
+[appliedStereotypes~=Where]> Compartment[kind=constraints],
+[appliedStereotypes~=Where]> Compartment[kind=operations],
+[appliedStereotypes~=Where]> Compartment[kind=attributes],
+[appliedStereotypes~=Where]> Compartment[kind=symbol],
+
+[appliedStereotypes~=Why]> Compartment[kind=constraints],
+[appliedStereotypes~=Why]> Compartment[kind=operations],
+[appliedStereotypes~=Why]> Compartment[kind=attributes],
+[appliedStereotypes~=Why]> Compartment[kind=symbol],
+
+[appliedStereotypes~=When]> Compartment[kind=constraints],
+[appliedStereotypes~=When]> Compartment[kind=operations],
+[appliedStereotypes~=When]> Compartment[kind=attributes],
+[appliedStereotypes~=When]> Compartment[kind=symbol],
+
+[appliedStereotypes~=How]> Compartment[kind=constraints],
+[appliedStereotypes~=How]> Compartment[kind=operations],
+[appliedStereotypes~=How]> Compartment[kind=attributes],
+[appliedStereotypes~=How]> Compartment[kind=symbol],
+
+[appliedStereotypes~=Action]> Compartment[kind=constraints],
+[appliedStereotypes~=Action]> Compartment[kind=operations],
+[appliedStereotypes~=Action]> Compartment[kind=attributes],
+[appliedStereotypes~=Action]> Compartment[kind=symbol],
+
+[appliedStereotypes~=NegativeAuthorization]> Compartment[kind=attributes],
+[appliedStereotypes~=NegativeAuthorization]> Compartment[kind=symbol],
+[appliedStereotypes~=NegativeAuthorization]> Compartment[kind=operations],
+
+[appliedStereotypes~=NegativeObligation]> Compartment[kind=attributes],
+[appliedStereotypes~=NegativeObligation]> Compartment[kind=symbol],
+[appliedStereotypes~=NegativeObligation]> Compartment[kind=operations],
+
+[appliedStereotypes~=PositiveObligation]> Compartment[kind=attributes],
+[appliedStereotypes~=PositiveObligation]> Compartment[kind=symbol],
+[appliedStereotypes~=PositiveObligation]> Compartment[kind=operations],
+
+[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=attributes],
+[appliedStereotypes~=PositiveAuthorization]> Compartment[kind=symbol],
 [appliedStereotypes~=PositiveAuthorization]> Compartment[kind=operations] {
 	visible:false;
 }
