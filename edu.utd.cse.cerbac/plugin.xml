@@ -145,10 +145,9 @@
       </themeContribution>
    </extension>
 
-
-
+<!--
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated cerbac.profile -->
+   
       <package
             uri="http://www.utd.edu/cse/Cerbac"
             class="edu.utd.cse.cerbac.cerbac.CerbacPackage"
@@ -161,5 +160,5 @@
             uri="http://www.utd.edu/cse/Cerbac">
       </profile>
    </extension>
-
+-->
 </plugin>

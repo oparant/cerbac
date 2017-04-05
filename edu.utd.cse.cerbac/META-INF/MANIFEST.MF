@@ -15,7 +15,7 @@ Require-Bundle: org.eclipse.papyrus.infra.viewpoints.policy,
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: edu.utd.cse.cerbac.cerbac,
  edu.utd.cse.cerbac.cerbac.impl,
  edu.utd.cse.cerbac.cerbac.util
