@@ -6,18 +6,37 @@
     point="org.eclipse.emf.ecore.uri_mapping">
     <mapping
        source="pathmap://CERBAC_PROFILES/"
-       target="platform:/plugin/edu.utd.cse.cerbac/resources/profiles/"/>
+       target="platform:/plugin/edu.utd.cse.cerbac/resources/profiles/">
+    </mapping>
+     <mapping
+       source="pathmap://CERBAC_LIBRARY/"
+       target="platform:/plugin/edu.utd.cse.cerbac/resources/profiles/">
+    </mapping>
  </extension>  
 
+ <!-- register the profile so it can be found by the Papyrus Apply profil property view -->
  <extension
     point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
     <profile
         description="Cerbac Profile for Cloud Computing Security and Privacy Policies"
         iconpath="resources/icons/obj32/cerbac_icon.png"
         name="Cerbac"
-        path="pathmap://CERBAC_PROFILES/cerbac.profile.uml">
+        path="pathmap://CERBAC_PROFILES/cerbac.profile.uml"
+        provider="UTD CSE">
     </profile>
  </extension>
+ 
+  <!-- register the profile so it can be found by the Papyrus Import Library menu in the model explorer -->   
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="Library for Cerbac"
+            iconpath="resources/icons/obj32/cerbac_icon.png"
+            name="Cerbac"
+            path="pathmap://CERBAC_LIBRARY/cerbac.profile.uml"
+            provider="UTD CSE">
+      </library>
+   </extension>
  
  
    <extension point="org.eclipse.papyrus.infra.ui.papyrusDiagram">
@@ -72,7 +91,7 @@
  
  
 
-<!--New Wizard -->
+<!--New Wizard for Cerbac-->
  <extension
          id="Cerbac::Wizard"
          name="Cerbac Framework"
@@ -127,5 +146,20 @@
    </extension>
 
 
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated cerbac.profile -->
+      <package
+            uri="http://www.utd.edu/cse/Cerbac"
+            class="edu.utd.cse.cerbac.cerbac.CerbacPackage"
+            genModel="resources/profiles/cerbac.profile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://CERBAC_LIBRARY/cerbac.profile.uml#_mEFgcA3mEeen2NFyc6Aifw/"
+            uri="http://www.utd.edu/cse/Cerbac">
+      </profile>
+   </extension>
 
 </plugin>

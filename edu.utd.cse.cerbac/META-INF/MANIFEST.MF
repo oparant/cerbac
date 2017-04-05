@@ -10,11 +10,15 @@ Require-Bundle: org.eclipse.papyrus.infra.viewpoints.policy,
  org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.uml2.types;visibility:=reexport,
- org.eclipse.uml2.uml;visibility:=reexport
+ org.eclipse.uml2.uml;visibility:=reexport,
+ org.eclipse.papyrus.dsml.validation
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: edu.utd.cse.cerbac.cerbac,
+ edu.utd.cse.cerbac.cerbac.impl,
+ edu.utd.cse.cerbac.cerbac.util
 Import-Package: org.eclipse.papyrus.infra.gmfdiag.common,
  org.eclipse.papyrus.uml.diagram.common.commands,
  org.eclipse.papyrus.uml.tools.utils,

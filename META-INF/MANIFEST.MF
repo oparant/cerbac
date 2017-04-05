@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Validation
+Bundle-SymbolicName: edu.utd.cse.cerbac.validation;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: edu.utd.cse.cerbac.validation.Activator
+Bundle-Vendor: utd-cse
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.validation,
+ org.eclipse.papyrus.uml.service.validation,
+ org.eclipse.uml2.uml,
+ edu.utd.cse.cerbac
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
