@@ -153,6 +153,8 @@
             class="edu.utd.cse.cerbac.cerbac.CerbacPackage"
             genModel="resources/profiles/cerbac.profile.genmodel"/>
    </extension>
+   
+   -->
    <extension
          point="org.eclipse.uml2.uml.generated_package">
       <profile
@@ -160,5 +162,5 @@
             uri="http://www.utd.edu/cse/Cerbac">
       </profile>
    </extension>
--->
+
 </plugin>
